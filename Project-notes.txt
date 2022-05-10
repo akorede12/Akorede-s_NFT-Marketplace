@@ -1,0 +1,21 @@
+when using '.secret' file for storing environmental variables
+create .secret file in text editor(vs code), place the environmental variables you want to store in it.
+
+then to retrieve the environmental variables: 
+in the "config folder"(hardhat) use this to retreive the environmental variables: 
+
+const fs = require("fs")
+const privateKey = fs.readFileSync(".secret").toString()
+
+
+
+contract address: 0xCdD4F46fb3a35DAcc41E428Cf028657cD395e42d
+Mumbai testnet 
+
+using dotenv/ env files. 
+require("dotenv").config({ path: ".env" });
+// require("dotenv").config({ path:__dirname+ "/.env" });
+
+const ALCHEMY_API_KEY_URL = process.env.ALCHEMY_API_KEY_URL;
+
+const RINKEBY_PRIVATE_KEY = process.env.RINKEBY_PRIVATE_KEY;
