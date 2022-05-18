@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <nav className= "border-b p-6">
-        <p className= "text-4xl font-bold"> Akorede's NFT Marketplace</p>
+        <p className= "text-4xl font-bold"> Akoredes NFT Marketplace</p>
         <div className= "flex mt-4">
           <Link href= "/">
             <a className= "mr-4 text-red-500">
