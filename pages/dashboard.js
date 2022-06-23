@@ -7,7 +7,7 @@ import {
     marketAddress
 } from '../config' 
 
-import NFTMarket from '../artifacts/contracts/NFTMarket.sol/NFTMarket.json'
+import NFTMarket from '../utils/NFTMarket.json'
 
 export default function CreatorDashboard() {
     const [nfts, setNFTs] = useState([])
@@ -18,7 +18,7 @@ export default function CreatorDashboard() {
     async function loadNFTs() {
         const web3Modal = new Web3Modal({
             network: 'mainnet',
-            cacheProvider: true,
+            cacheProvider: true, 
         })
 
         const connection = await web3Modal.connect()
